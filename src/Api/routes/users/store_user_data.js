@@ -15,7 +15,7 @@ route.post('/',async (req,res)=>{
         lastPlayingSong: {sType:'',sName:'',song:'',sImage:'',maName:'',sDuration:''}
     })
     await doc.save()
-    res.json({"success":true})
+    res.send(doc)
 })
 
 module.exports=route
